@@ -21,6 +21,7 @@ namespace BlazorAppThemes
 			Host.CreateDefaultBuilder(args)
 				.ConfigureWebHostDefaults(webBuilder => {
 					webBuilder.UseStartup<Startup>();
+					webBuilder.UseStaticWebAssets();
 				});
 	}
 }

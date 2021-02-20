@@ -10,7 +10,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using BlazorAppThemes.Data;
-using BlazorAppThemes.ThemeSwitcher;
 
 namespace BlazorAppThemes
 {
@@ -28,7 +27,6 @@ namespace BlazorAppThemes
 			services.AddRazorPages();
 			services.AddServerSideBlazor();
 			services.AddSingleton<WeatherForecastService>();
-			services.AddScoped<LinkService>();
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
